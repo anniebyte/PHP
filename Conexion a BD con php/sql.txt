@@ -1,0 +1,7 @@
+create table tablapersona(
+id int auto_increment not null,
+nombre varchar(250) not null,
+edad int not null,
+constraint id_pk
+primary key(id)
+)
