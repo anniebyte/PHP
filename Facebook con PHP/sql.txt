@@ -1,0 +1,15 @@
+create table usuarios (
+id int auto_increment not null,
+correo varchar(250) not null,
+pass varchar(250) not null,
+constraint id_u_pk
+primary key(id))ENGINE=InnoDB;
+
+create table mensajes (
+id int auto_increment not null,
+id_usuario int,
+index(id_usuario),
+fecha datetime not null,
+publicacion text not null,
+constraint id_m_pk
+primary key(id))ENGINE=InnoDB;
